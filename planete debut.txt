@@ -1,0 +1,26 @@
+Etablir l'ecran
+etablir 
+constante gravitationel
+unitée astronomique, l'echelle et le temps
+TIMESTEP = 3600 * 24  # 1 jour en secondes
+
+
+faire la calsse planete (nom mass position vitesse)
+
+
+Fonction attraction
+Calculer dx et dy : Trouver les différences de position en x et y entre deux corps.
+Calculer la distance : Utiliser dx et dy pour obtenir la distance entre les corps.
+Calculer la force : Appliquer la loi de la gravitation pour obtenir la force gravitationnelle.
+Calculer l'angle : Déterminer l'angle de direction de la force.
+Décomposer la force : Convertir la force en composantes x et y.
+Retourner les composantes : Renvoi des valeurs fx et fy.
+
+Fonction update_position
+Initialiser les forces : Mettre total_fx et total_fy à zéro.
+Calculer les forces totales : Accumuler les forces gravitationnelles exercées par les autres corps.
+Mettre à jour la vitesse : Ajuster vx et vy en fonction des forces et du pas de temps.
+Mettre à jour la position : Calculer la nouvelle position à partir de la vitesse et du pas de temps.
+        
+        
+dessiner une planete : pygame.draw.circle(win, self.color, (int(x), int(y)), 5)
